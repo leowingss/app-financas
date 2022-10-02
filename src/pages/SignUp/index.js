@@ -17,7 +17,7 @@ export default function SignUp() {
     async function createAccount() {
         await firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(() => {
-                alert('Cadastro realizado com sucesso')
+                alert('Cadastro realizado com sucesso!')
             })
             .catch((error) => {
                 alert('Erro: ' + error)
