@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { View, Text, Platform } from 'react-native';
 import {
     Background, Container, Logo, AreaInput, Input, SubmitButton,
     SubmitText, Link, LinkText
 } from '../SignIn/styles'
 import firebase from '../../services/firebaseConnection';
+import { AuthContext } from '../../contexts/auth';
 
 export default function SignUp() {
 
@@ -12,16 +13,11 @@ export default function SignUp() {
     const [password, setPassword] = useState('');
     const [nome, setNome] = useState('');
 
+    const { signUp } = useContext(AuthContext);
 
 
-    async function createAccount() {
-        await firebase.auth().createUserWithEmailAndPassword(email, password)
-            .then(() => {
-                alert('Cadastro realizado com sucesso!')
-            })
-            .catch((error) => {
-                alert('Erro: ' + error)
-            })
+    function handleSignUp() {
+        signUp(email, password, nome);
     }
 
 
@@ -64,7 +60,7 @@ export default function SignUp() {
                     />
                 </AreaInput>
 
-                <SubmitButton onPress={createAccount}>
+                <SubmitButton onPress={handleSignUp}>
                     <SubmitText>
                         Criar Conta
                     </SubmitText>
