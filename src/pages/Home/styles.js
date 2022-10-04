@@ -27,9 +27,14 @@ font-weight: bold;
 `;
 
 export const Title = styled.Text`
-margin-left: 15px;
+margin-left: 5px;
 color: #00b94a;
+`;
 
+export const Area = styled.View`
+flex-direction: row;
+margin-left: 15px;
+align-items: baseline;
 `;
 
 
