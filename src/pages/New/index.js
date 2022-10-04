@@ -49,7 +49,7 @@ export default function New() {
 
         let key = await firebase.database().ref('historico').child(uid).push().key;
 
-        await firebase.database().ref('historico').child(key).set({
+        await firebase.database().ref('historico').child(uid).child(key).set({
             tipo: tipo,
             valor: parseFloat(valor),
             date: format(new Date(), 'dd/MM/yy')

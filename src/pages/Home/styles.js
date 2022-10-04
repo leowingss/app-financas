@@ -34,7 +34,12 @@ color: #00b94a;
 
 
 export const List = styled.FlatList.attrs({
-    marginHorizontal: 15
+    marginHorizontal: 15,
+    contentContainerStyle: {
+        paddingBottom: 80,
+        flexDirection: "column-reverse",
+    }
+
 })`
 padding-top: 15px;
 background-color: #fff;
