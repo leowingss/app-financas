@@ -12,11 +12,11 @@
 
 <div style="display: flex; flex-wrap: wrap;">
 <img src="./assets/login.png" style="width: 250px;">
-<img src="./assets/cadastro.png" style="width: 150px;">
-<img src="./assets/home.png" style="width: 150px;">
-<img src="./assets/registro.png" style="width: 150px;">
-<img src="./assets/menu.png" style="width: 150px;">
-<img src="./assets/perfil.png" style="width: 150px;">
+<img src="./assets/cadastro.png" style="width: 250px;">
+<img src="./assets/home.png" style="width: 250px;">
+<img src="./assets/registro.png" style="width: 250px;">
+<img src="./assets/menu.png" style="width: 250px;">
+<img src="./assets/perfil.png" style="width: 250px;">
 </div>
 
 
