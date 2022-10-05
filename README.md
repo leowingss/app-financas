@@ -8,7 +8,15 @@
  <https://www.youtube.com/c/Sujeitoprogramador>
 
 
-<!-- ## Layout Mobile  -->
+## Layout Mobile 
+
+<img src="./assets/login.png" style="width: 150px;">
+<img src="./assets/cadastro.png" style="width: 150px;">
+<img src="./assets/home.png" style="width: 150px;">
+<img src="./assets/registro.png" style="width: 150px;">
+<img src="./assets/menu.png" style="width: 150px;">
+<img src="./assets/perfil.png" style="width: 150px;">
+
 
 
 # Tecnologias utilizadas 
